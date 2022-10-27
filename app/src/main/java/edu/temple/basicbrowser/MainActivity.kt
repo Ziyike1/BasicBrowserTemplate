@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         if(url.contains(":")){
             url.toString()
         }else{
-            StringBuilder().toString()
+            StringBuilder().append("http").toString()
         }
     }
 

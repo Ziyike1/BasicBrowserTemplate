@@ -13,6 +13,14 @@ class MainActivity : AppCompatActivity() {
     lateinit var goButton: ImageButton
     lateinit var webView: WebView
 
+    private fun myURL(url: String) {
+        if(url.contains(":")){
+            url.toString()
+        }else{
+            StringBuilder().toString()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,6 +35,5 @@ class MainActivity : AppCompatActivity() {
                 super.onPageFinished(view, url)
             }
         }
-
     }
 }

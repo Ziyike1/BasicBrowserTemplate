@@ -35,5 +35,6 @@ class MainActivity : AppCompatActivity() {
                 super.onPageFinished(view, url)
             }
         }
+        myURL(urlEditText.text.toString()).let { webView.loadUrl(it.toString()) }
     }
 }
